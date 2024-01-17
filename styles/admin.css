@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(243, 90, 7, 0.255);
+    z-index: 1000;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+.list-item{
+    list-style-type:none;
+    display: flex;
+    z-index: 999;
+    line-height: 35px;  
+}
+
+.menu{
+    margin-left: auto; 
+}
+
+.logo{
+    margin: 15px 100px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.log{
+    color: #ff4500;
+}
+
+.item{
+    margin: 15px 15px;
+}
+
+.item a{
+    text-decoration: none;
+    color: #ff4500;
+    font-size: 20px;
+    transition: color 2s;
+}
+
+.item a:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+.titre{
+    text-align: center;
+    margin: 5px;
+    font-size: 90px;
+    color: rgb(15, 52, 250);
+}
+
+
+.container-home{
+    height: calc(100vh - 70px);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content{
+    width: 65%;
+    margin-left: 12%;
+    position: relative;
+}
+
+.text-content::after{
+    content:  '';
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(95, 205, 249, 0.473);
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    z-index: -10;
+    animation: boul 5s alternate ease infinite;
+}
+/*  animation du cercle*/
+@keyframes boul{
+    0%{
+        width: 100px;
+        height: 100px; 
+    }
+    50%{
+        width: 200px;
+        height: 200px;
+    }
+    70%{
+        width: 250px;
+        height: 250px;
+    }
+    100%{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.text-item{
+    margin-top: -8vh;
+    width: 100%;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.title-home{
+    font-size: 60px;
+}
+.text-item .title{
+    font-weight: bold;
+}
+
+.mot{
+    color: rgb(74, 150, 236);
+}
+.pass{
+    color: #3700ff;
+}
+.btn{
+    margin-top: 35px;
+    border: 0;
+    outline: 0;
+    padding: 20px 50px;
+    color: #f1f1f1;
+    background-color: #ff4500;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: rgb(74, 150, 236);
+}
+
+.conpte{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.conpte h1{
+    padding:10px;
+    color: #ff4400c0;
+}
+.conpte h2{
+    padding:10px;
+    font-size: 25px;
+   
+}
+.conpte span:nth-child(){
+    color: #ff4500;
+}
+.conpte p{
+    padding:10px;
+    font-size:20px;
+}
+
+.pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 60px;
+}
+
+.font{
+    width: 350px;
+    height: 220px;
+    padding: 2em;
+    box-shadow: 5px 5px 10px rgba(13, 119, 239, 0.315);
+    margin: 1em;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+}
+.font p{
+    font-size: 30px;
+}
+.font span{
+    color: #ff4500;
+    font-size: 30px
+} 
+footer{
+    margin-top:40px ;
+    border-top: 5px solid rgba(255, 255, 255, 0.767);
+    background-color: black;
+    color:white;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.767);
+    width: 30%;
+    padding-bottom: 10px;
+}
+
+
+footer .services .service {
+    margin-right: 30px;
+    padding: 10px;
+}
+
+
+
+footer #CONTACTS{
+    color:rgb(246, 11, 11) ;
+}
+
+  .gcard{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:auto;
+}
+.card {
+  flex-basis: auto;
+    width: 340px;
+    height: 440px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(7, 7, 7, 0.255);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 40px;
+    align-content: center;
+    overflow:hidden;
+  }
+  .card span{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    font-size: 25px;
+    color: coral;
+  }
+  
+  .card-content {
+    padding: 5px;
+  } 
+
+  .card-content button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btnconsulter{
+    border: 0;
+    outline: 0;
+    margin: 2px;
+    padding: 4px 8px;
+    color: #f1f1f1;
+    background-color: #ff4500;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .btnconsulter a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  @media(max-width: 500px) {
+
+    .navbar{
+        height: 170px;
+    }
+    .list-item{
+        display: block;
+        line-height: 15px;
+    }
+    .logo{
+        margin: 15px 15px;
+        margin-left: 15px;
+        font-size: 20px;
+        line-height: 35px;
+    } 
+    .container-home{
+        height: calc(120vh - 10px);
+    }
+    .title-home{
+        font-size: 50px;
+    }
+    .titre{
+        font-size: 70px;
+    }
+    .card {
+        align-items:  center;
+        width: 150px;
+        height: 250px;
+        margin: 17px;
+    }
+    .card-content h2 {
+        font-size: 12px;
+    }
+    .card img {
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .card .card-content span{
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 0.1;
+    }
+
+    .font p{
+        font-size: 20px;
+    }
+    .font h3{
+        font-size: 20px;
+    }
+    .font span{
+        font-size: 20px;
+    }
+
+    .font{
+        width: 450px;
+        height: 210px;
+        padding: 2em;
+        margin: 10px;
+    }
+}

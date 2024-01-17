@@ -1,0 +1,214 @@
+*::before
+*::after{
+    box-sizing: border-box;
+    font-family: "system-ui", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), transparent) center center no-repeat;
+    background-size: cover;
+}
+
+body::before{
+    content: "";
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    left: 15%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+body::after{
+    content: "";
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(195, 35, 35);
+    left: 80%;
+    top: 74%;
+    filter: blur(150px);
+}
+
+.container{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:rgb(231, 227, 227);
+    background-position:center;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav .logo{
+    width: 300px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+nav.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-right: 40px;
+    text-align: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    color: aqua;
+    margin-top: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 25px;
+    transition: border-color .3s;
+}
+
+nav ul li a:hover{
+    border-color:aqua;
+}
+
+button.btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    background-color:transparent;
+    color: aqua;
+    border: 1px solid transparent;
+    transition: border-color .3s;
+}
+
+
+
+button.btn:hover{
+    border-color:aqua;
+    background-color: red;
+}
+
+.sec-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background:rgb(231, 227, 227);
+    border-radius: 10px;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto; 
+}
+
+.form-wrapper .card{
+    width: 360px;
+    padding: 20px;
+    background-color:rgb(245, 240, 240) ;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 1.1rem;
+    color: rgb(3, 3, 3);
+    box-shadow: 2px 3px 8px #b3f7ff71;
+    border-radius: 50px;
+}
+
+.card-header .form-header{
+    flex: 50%;
+    text-align:center;
+    padding: 10px 0 ;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.card-header .form-header.active{
+    box-shadow: inset 1px 1px 2px rgba(19, 210, 177 /55%),inset -1px -1px 2px 
+    rgba(19, 210, 177 /55%), inset 1px -1px 2px rgba(19, 210, 177 /55%);
+    border-color: aqua;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+.card-body{
+    display: flex;
+    flex-wrap: nowrap ;
+    padding: 40px 0;
+    text-align: center;
+}
+
+form{
+  flex: 0 0 100%;  
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid aqua;
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+}
+
+.form-control::placeholder{
+    color: rgb(134, 255, 249 /65%);
+}
+
+.formbutton{
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #ccc;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.formbutton:hover{
+    box-shadow: 3px 5px 15px rgb(30, 157, 173);
+    transform: translateY(-5px);
+}
+
+

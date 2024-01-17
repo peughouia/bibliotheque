@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: rgb(247, 244, 244);
+    
+}
+
+body::before{
+    content: "";
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    left: 15%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+body::after{
+    content: "";
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(195, 35, 35);
+    left: 80%;
+    top: 74%;
+    filter: blur(150px);
+}
+
+.container{
+    width: 25rem;
+    color: #0e0d0d;
+    background: rgb(251, 250, 250);
+    padding: 20px 30px;
+    border-radius: 18px;
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.1) ;
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border:1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.container h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(14, 15, 15);
+}
+
+.container form{
+    /*margin: 30px 0 10px 0;*/
+    margin-top: 60px;
+}
+
+.container form p{
+    font-size: 1rem;
+}
+
+.container form input{
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-left: 70px;
+    background: transparent;
+    color: #110f0f;
+    border: 1px solid rgb(0, 9, 0);
+    transition: all 0.3s ease;
+}
+
+.container form select{
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0 15px;
+    margin-left: 70px;
+    background: transparent;
+    color: #110f0f;
+    border: 1px solid rgb(0, 9, 0);
+    transition: all 0.3s ease;
+}
+
+.container form input:hover{
+    border: 1px solid white;
+}
+.container form textarea{
+    height: 90px;
+    width: 80%;
+    margin-left: 70px;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0 15px;
+    background: transparent;
+    color: #110f0f;
+    border: 1px solid rgb(0, 9, 0);
+    transition: all 0.3s ease;
+}
+
+.container form input:focus{
+    padding: 0 14px;
+    border: 1px solid aqua;
+}
+
+
+.container form button{
+    width: 100%;
+    height: 42px;
+    color: aliceblue;
+    background: #554a4a;
+    font-size: 1rem; 
+    cursor: pointer;
+    border-radius: 5px ;
+    transition: all 0.3s ease;
+}
+
+.container form button:hover{
+    background: #070707;
+}
+
+/*****************************/
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(243, 90, 7, 0.255);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: #f1f1f1;
+}
+
+.list-item{
+    list-style-type:none;
+    display: flex;
+    z-index: 999;
+    line-height: 35px;  
+}
+
+.menu{
+    margin-left: auto; 
+}
+
+.logo{
+    margin: 15px 100px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.log{
+    color: #ff4500;
+}
+
+.item{
+    margin: 15px 15px;
+}
+
+.item a{
+    text-decoration: none;
+    color: #ff4500;
+    font-size: 20px;
+    transition: color 2s;
+}
+
+.item a:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+@media(max-width: 500px) {
+
+    .navbar{
+        height: 170px;
+    }
+    .list-item{
+        display: block;
+        line-height: 15px;
+    }
+    .logo{
+        margin: 15px 15px;
+        margin-left: 15px;
+        font-size: 20px;
+        line-height: 35px;
+    } 
+
+    .container{
+        width: 100%;
+        margin-top: 190px;
+    }
+
+    .container h2{
+        font-size: 20px;
+        color: rgb(14, 15, 15);
+    }
+
+    .container form p{
+        font-size: 18px;
+    }
+    .container form input{
+        height: 30px;
+        width: 80%;
+    }
+}
