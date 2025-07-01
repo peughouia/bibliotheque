@@ -40,8 +40,8 @@
 
 1. **Cloner le dépôt**
     ```bash
-    git clone https://github.com/votre-utilisateur/bibliotheque-web.git
-    cd bibliotheque-web
+    git clone https://github.com/peughouia/bibliotheque.git
+    cd bibliotheque
     ```
 
 2. **Configurer la base de données**
