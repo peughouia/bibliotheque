@@ -21,16 +21,13 @@
   - Espace sécurisé pour l’admin afin de gérer la collection
   - Accès public à la consultation et au téléchargement
 
-- 🎨 **Interface responsive**
-  - Design moderne et intuitif adapté à tous les périphériques (ordinateur, tablette, mobile)
 
 ## Technologies utilisées
 
-- **Backend :** PHP (vanilla ou avec extensions/micro-frameworks)
+- **Backend :** PHP
 - **Frontend :** HTML5, CSS3, JavaScript (si besoin d’interactivité)
-- **Base de données :** MySQL ou SQLite (pour stocker les infos sur les livres)
+- **Base de données :** MySQL (pour stocker les infos sur les livres)
 - **Stockage des fichiers :** Dossiers sécurisés côté serveur (PDF uploadés)
-- **Sécurité :** sessions PHP, validations sur l’upload de PDF
 
 ## Aperçu
 
